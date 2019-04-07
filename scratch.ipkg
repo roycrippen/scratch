@@ -1,0 +1,24 @@
+package scratch
+
+author     = Roy Crippen
+maintainer = 
+license    = BSD3
+brief      = "scratch pad"
+readme     = README.md
+sourceloc  = git://git@github.com.....FIXME
+
+pkgs = contrib
+
+opts  = "--partial-eval"
+main  = Demo.Main
+
+modules = Demo
+        , Demo.Utils
+        , Demo.Other
+        , Test.Utils
+        , Test.Other
+
+sourcedir  = "src"
+
+tests = Test.Utils.runTest
+      , Test.Other.runTest
