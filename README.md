@@ -39,6 +39,9 @@ Main> demoQuad 8
 4096 : Integer
 Main> demoQuad 1.2
 2.0736 : Double
+Main> :exec main
+hello
+hello
 Main> :quit
 ```
 
