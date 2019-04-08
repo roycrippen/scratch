@@ -5,20 +5,19 @@ maintainer =
 license    = BSD3
 brief      = "scratch pad"
 readme     = README.md
-sourceloc  = git://git@github.com.....FIXME
+sourceloc  = https://github.com/roycrippen/scratch.git
 
 pkgs = contrib
 
-opts  = "--partial-eval"
-main  = Demo.Main
+opts       = "--partial-eval"
+sourcedir  = "src"
+main       = Demo.Main
 
 modules = Demo
         , Demo.Utils
         , Demo.Other
         , Test.Utils
         , Test.Other
-
-sourcedir  = "src"
 
 tests = Test.Utils.runTest
       , Test.Other.runTest
